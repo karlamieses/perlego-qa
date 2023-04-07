@@ -13,13 +13,7 @@ module.exports = defineConfig({
   viewportWidth: 1536,
   viewportHeight: 960,
   blockHosts: [
-    // '*trustpilot.com',
     '*google-analytics.com',
-    // '*perlego.com/catalogue-service/v1/topics',
-    // '*doubleclick.net',
-    // '*sentry.io',
-    // '*algolia.net',
-    // '*algolianet.com'
   ],
   env: {
     testPassword: "perlego@123",
