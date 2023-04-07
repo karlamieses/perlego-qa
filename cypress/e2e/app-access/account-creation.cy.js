@@ -11,10 +11,7 @@ describe('Demo account creation', () => {
     before(() => {
         cy.visit('/group-register?orgt1=kRfe+Wf+nsyt4vM3RIyRnA==&regcode=HGR897')
     })
-
-
     it('should create a new account', () => { 
-
         cy.getByTestId('checkbox-terms-conditions')
           .click({force: true})
         cy.getByTestId('b2b-creation-call-to-action-button')

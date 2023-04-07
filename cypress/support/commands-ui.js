@@ -18,7 +18,6 @@ Cypress.Commands.add('getByDataComponentLocator', (selector) => {
 
 
 Cypress.Commands.add('uiLogin', (email, password = Cypress.env('testPassword')) => {
-  cy.session([email, password], () => {
     cy.visit('/login')
     cy.get('[data-testid=CookieBanner-AcceptCookiesButton]:visible')
       .click()
@@ -32,7 +31,6 @@ Cypress.Commands.add('uiLogin', (email, password = Cypress.env('testPassword')) 
       .scrollIntoView()
       .click()
     cy.visit('/search')
-  })
 })
 
 Cypress.Commands.add('checkUrl', (url) => {
