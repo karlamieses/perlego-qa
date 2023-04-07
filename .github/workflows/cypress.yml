@@ -15,13 +15,10 @@ jobs:
         with:
           browser: chrome
           run: yarn cypress run
-          # Records to Cypress Cloud 
-          # https://docs.cypress.io/guides/cloud/projects#Set-up-a-project-to-record
           record: true
           parallel: true
         env:
-          # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in GitHub repo → Settings → Secrets → Actions
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          # Creating a token https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_PERLEGO_ACCOUNT: ${{ secrets.MY_PERLEGO_ACCOUNT }}
