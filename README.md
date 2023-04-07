@@ -6,12 +6,23 @@ This repository contains E2E testing utilizing Cypress for the Perlego app.
 
 
 ### 💻 Content
+- 🪴 Testing Approach 
 - 🪴 Prerequisites
 - 🚀 Install
 - 😄 Rules 
 - 👾 CI
+- ⚠️ Disclaimer
 
 
+### 🪴 How to navigate in the file
+When running or launching the cypress runner, you will see Cucumber files that are located under
+cypress/integration and files under cypress/e2e. 
+This repo has a mix of Cucumber technique and traditional approach. 
+
+Note: 
+The following specs are failing:
+- account-creation.cy.js: due to Captcha verification
+- workspace.cy.js: due to unknown reasons, this only fails in CI
 
 ### 🪴 Prerequisites 
 Step 1. env local (required)
@@ -38,6 +49,9 @@ Cypress Dashboard
 ### 👾 Running test
 From the root project run the following command to launch the cypress runner: yarn cypress open
 From the root project run the following command to run cypress headless: yarn cypress run
+
+### ⚠️ Disclaimer
+This is my first time utilizing BDD with Cypress. 
 
 
 

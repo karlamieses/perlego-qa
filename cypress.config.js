@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-const configWithDotenv = require('dotenv').config()
+const configWithDotenv = require('dotenv').config();
 
 module.exports = defineConfig({
   projectId: "2mg4eh",
@@ -12,7 +12,7 @@ module.exports = defineConfig({
   pageLoadTimeout: 180000,
   viewportWidth: 1536,
   viewportHeight: 960,
-  blockHosts: [ 
+  blockHosts: [
     // '*trustpilot.com',
     '*google-analytics.com',
     // '*perlego.com/catalogue-service/v1/topics',
@@ -21,13 +21,13 @@ module.exports = defineConfig({
     // '*algolia.net',
     // '*algolianet.com'
   ],
-  env:{
-    testPassword:"perlego@123",
-    apiLoginEndpoint:"https://auth.perlego.com/login",
-    apiCreateAccountEndpoint:"https://api.perlego.com/user-v2/v2/b2b-user",
-    apiWorkspaceEndpoint:"https://api.perlego.com/workspace/workspace",
-    apiDeleteEndpoint:"https://api.perlego.com/workspace/workspaces",
-    waitForCatalogue:"https://api.perlego.com/catalogue-service/v1/topics",
+  env: {
+    testPassword: "perlego@123",
+    apiLoginEndpoint: "https://auth.perlego.com/login",
+    apiCreateAccountEndpoint: "https://api.perlego.com/user-v2/v2/b2b-user",
+    apiWorkspaceEndpoint: "https://api.perlego.com/workspace/workspace",
+    apiDeleteEndpoint: "https://api.perlego.com/workspace/workspaces",
+    waitForCatalogue: "https://api.perlego.com/catalogue-service/v1/topics",
     my_perlego_account: process.env.MY_PERLEGO_ACCOUNT,
     my_perlego_password: process.env.MY_PERLEGO_PASSWORD,
     cypress_record_key: process.env.CYPRESS_RECORD_KEY,
@@ -35,8 +35,11 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      const cucumber = require('cypress-cucumber-preprocessor').default
+        on('file:preprocessor', cucumber())
     },
 
-   baseUrl: 'https://www.perlego.com/',
-  },
+    baseUrl: 'https://www.perlego.com/',
+    "specPattern": "cypress/{integration,e2e}/**/*.{ts,js,feature}",
+    },
 });
