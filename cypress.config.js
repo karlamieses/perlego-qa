@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 const configWithDotenv = require('dotenv').config()
 
 module.exports = defineConfig({
-  projectId: "jatw97",
+  projectId: "2mg4eh",
   chromeWebSecurity: false,
   watchForFileChanges: false,
   experimentalInteractiveRunEvents: true,
@@ -30,6 +30,7 @@ module.exports = defineConfig({
     waitForCatalogue:"https://api.perlego.com/catalogue-service/v1/topics",
     my_perlego_account: process.env.MY_PERLEGO_ACCOUNT,
     my_perlego_password: process.env.MY_PERLEGO_PASSWORD,
+    cypress_record_key: process.env.CYPRESS_RECORD_KEY,
   },
   e2e: {
     setupNodeEvents(on, config) {

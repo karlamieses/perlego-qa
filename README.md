@@ -35,4 +35,9 @@ chore: adding readme file
 GitHub Actions
 Cypress Dashboard
 
+### 👾 Running test
+From the root project run the following command to launch the cypress runner: yarn cypress open
+From the root project run the following command to run cypress headless: yarn cypress run
+
+
 
