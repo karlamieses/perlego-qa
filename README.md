@@ -6,13 +6,13 @@ This repository contains E2E testing utilizing Cypress for the Perlego app.
 
 
 ### 💻 Content
-- 🪴 [Testing Approach](https://github.com/karlamieses/perlego-qa/edit/main/README.md#-how-to-navigate-in-the-file) 
-- 🪴 [Prerequisites](https://github.com/karlamieses/perlego-qa/edit/main/README.md#-how-to-navigate-in-the-file)
-- 🚀 [Install](https://github.com/karlamieses/perlego-qa/edit/main/README.md#-how-to-navigate-in-the-file)
-- 😄 [Rules](https://github.com/karlamieses/perlego-qa/edit/main/README.md#-how-to-navigate-in-the-file)
-- 👾 [CI](https://github.com/karlamieses/perlego-qa/edit/main/README.md#-how-to-navigate-in-the-file)
-- 👾 [Running test](https://github.com/karlamieses/perlego-qa/edit/main/README.md#-running-test)
-- ⚠️ [Disclaimer](https://github.com/karlamieses/perlego-qa/edit/main/README.md#-running-test)
+- 🪴 [Testing Approach](https://github.com/karlamieses/perlego-qa#-how-to-navigate-in-the-repo) 
+- 🪴 [Prerequisites](https://github.com/karlamieses/perlego-qa#-prerequisites)
+- 🚀 [Install](https://github.com/karlamieses/perlego-qa#-install)
+- 😄 [Rules](https://github.com/karlamieses/perlego-qa#-rules)
+- 👾 [CI](https://github.com/karlamieses/perlego-qa#-ci)
+- 👾 [Running test](https://github.com/karlamieses/perlego-qa#-running-test)
+- ⚠️ [Disclaimer](https://github.com/karlamieses/perlego-qa#%EF%B8%8F-disclaimer)
 
 
 ### 🪴 How to navigate in the repo
